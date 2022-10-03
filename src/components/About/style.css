@@ -1,0 +1,124 @@
+#about-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about-container h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+#about-container p {
+  text-align: center;
+  font-weight: 200;
+  font-size: 25px;
+  margin-top: 0;
+}
+
+#about-content {
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#about-svg {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#about-right-content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#about-right-content p {
+  width: 80%;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+#about-right-content button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  border-radius: 30px;
+  width: 220px;
+  border: none;
+}
+
+#about-right-content button:hover {
+  color: white;
+  transform: scaleX(1.05);
+  cursor: pointer;
+  background-color: #3b3b3b;
+}
+
+@media screen and (max-width: 1000px) {
+  #about-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #about-container h2 {
+    font-size: 35px;
+  }
+  #about-container p {
+    font-size: 18px;
+  }
+  #about-content {
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #about-svg {
+    width: 100%;
+  }
+
+  #about-right-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about-right-content {
+    padding: 20px;
+    width: 100%;
+  }
+
+  #about-right-content p {
+    text-align: center;
+    font-size: 18px;
+    overflow-x: hidden;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  #about-content button {
+    font-size: 15px;
+    width: max-content;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+  }
+}
