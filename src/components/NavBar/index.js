@@ -77,7 +77,7 @@ export default function NavBar() {
               </Link>
             </li>
             <li>
-              <Link to='contact-link' spy={true} smooth={true} offset={-50}>
+              <Link to='contact-link' spy={true} smooth={true} offset={-80}>
                 <span
                   onClick={menuHandler}
                   style={{ margin: 0, fontSize: '18px' }}>

@@ -40,7 +40,7 @@
 #outer-proj-cont {
   background-color: #efefef;
   margin-top: 2rem;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
   border-radius: 2rem;
 }
@@ -78,5 +78,8 @@
   }
   #project-container p {
     font-size: 18px;
+  }
+  #outer-proj-cont {
+    padding: 0;
   }
 }
