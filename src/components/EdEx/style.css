@@ -9,6 +9,7 @@
 }
 
 #edex-container h2 {
+  color: #383838;
   text-align: center;
   font-weight: 400;
   font-size: 60px;
@@ -48,7 +49,7 @@
   content: '';
   width: 4px;
   height: 100%;
-  background-color: red;
+  background-color: #0e9392;
   position: absolute;
   top: 0;
   left: calc(50% - 2px);
@@ -72,7 +73,6 @@
 #tl-item-inner {
   padding: 30px;
   text-align: end;
-  color: black;
   margin-right: 30px;
   position: relative;
   justify-self: flex-end;
@@ -93,7 +93,7 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 3px solid red;
+  border: 3px solid #0e9392;
 }
 
 #arrow::after {
@@ -138,7 +138,6 @@
 
 #tl-item-cont h3,
 #tl-item-cont p {
-  color: inherit;
   margin: 0;
 }
 

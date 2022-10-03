@@ -107,7 +107,11 @@ export const TimeLineItem = (props) => {
     <div id='tl-item-cont'>
       <div id='tl-item-inner'>
         <h3>{props.data.type}</h3>
-        <p>{props.data.name}</p>
+        <p>
+          <span style={{ color: '#0e9392', fontWeight: '400' }}>
+            {props.data.name}
+          </span>
+        </p>
         <p>{props.data.time}</p>
         <span id='circle'></span>
         <span id='arrow'></span>

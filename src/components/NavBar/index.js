@@ -25,7 +25,7 @@ export default function NavBar() {
       {menuDown && (
         <div id='menu-down'>
           <div id='menu-head'>
-            <span>Portfolio</span>
+            <span style={{ color: '#0e9392' }}>Portfolio</span>
             <span id='eye-box'>
               <box-icon name='hide' size='md' onClick={menuHandler}></box-icon>
             </span>
@@ -89,7 +89,10 @@ export default function NavBar() {
         </div>
       )}
       <span>
-        <box-icon name='infinite' size='md'></box-icon>
+        <box-icon
+          style={{ fill: '#0e9392' }}
+          name='infinite'
+          size='md'></box-icon>
       </span>
       {!bigScreen ? (
         <span style={{ marginRight: '12px', color: 'inherit ' }}>

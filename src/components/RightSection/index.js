@@ -9,7 +9,9 @@ export default function RightSection() {
   return (
     <div id='right-sec'>
       <div id='right-left-sec'>
-        <h1>Prajwal Ramesh</h1>
+        <h1>
+          <span style={{ color: '#0e9392' }}>Prajwal</span> Ramesh
+        </h1>
         <h3>UI developer</h3>
         <p>
           Im a creative designer based in India and im very passionate and

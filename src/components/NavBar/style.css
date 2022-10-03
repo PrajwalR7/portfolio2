@@ -30,7 +30,7 @@ nav ul {
 }
 
 nav ul li {
-  color: #848484;
+  color: #383838;
   font-weight: 400;
   margin-right: 20px;
   margin-left: 20px;
@@ -39,7 +39,7 @@ nav ul li {
 
 nav ul li:hover {
   cursor: pointer;
-  color: black;
+  color: #0e9392;
 }
 
 #menu-down {

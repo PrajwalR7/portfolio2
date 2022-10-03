@@ -83,11 +83,11 @@
 
 @keyframes move {
   0% {
-    fill: #ccc;
+    fill: #fff;
     transform: translateX(0);
   }
   100% {
-    fill: black;
+    fill: #fff;
     transform: translateX(-50px);
   }
 }
