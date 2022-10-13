@@ -17,27 +17,27 @@ export default function Skills() {
             {/* <div id='front-content'> */}
             <li>
               <h6>JavaScript</h6>
-              <p style={{ color: 'red', fontWeight: 500 }}>Advanced</p>
+              {/* <p style={{ color: 'red', fontWeight: 500 }}>Advanced</p> */}
             </li>
             <li>
               <h6>Reactjs</h6>
-              <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p>
+              {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
             </li>
             <li>
               <h6>HTML</h6>
-              <p style={{ color: 'orangered', fontWeight: 400 }}>
+              {/* <p style={{ color: 'orangered', fontWeight: 400 }}>
                 Intermediate
-              </p>
+              </p> */}
             </li>
             <li>
               <h6>CSS</h6>
-              <p style={{ color: 'orangered', fontWeight: 400 }}>
+              {/* <p style={{ color: 'orangered', fontWeight: 400 }}>
                 Intermediate
-              </p>
+              </p> */}
             </li>
             <li>
               <h6>React-Native</h6>
-              <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p>
+              {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
             </li>
             {/* </div> */}
           </div>
@@ -47,23 +47,23 @@ export default function Skills() {
             </div>
             <li>
               <h6>JavaScript</h6>
-              <p style={{ color: 'red', fontWeight: 500 }}>Advanced</p>
+              {/* <p style={{ color: 'red', fontWeight: 500 }}>Advanced</p> */}
             </li>
             <li>
               <h6>Nodejs</h6>
-              <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p>
+              {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
             </li>
             <li>
               <h6>MySQL</h6>
-              <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p>
+              {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
             </li>
             <li>
               <h6>MongoDB</h6>
-              <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p>
+              {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
             </li>
             <li>
               <h6>Firebase</h6>
-              <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p>
+              {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
             </li>
           </div>
         </div>

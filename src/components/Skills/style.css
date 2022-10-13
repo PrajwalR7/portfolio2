@@ -42,10 +42,15 @@
   margin-left: 20px;
   width: 25%;
   height: 20%;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   /* border: 1px solid green; */
+}
+
+#frontend #end-head {
+  background-color: rgb(14, 147, 146);
+  color: whitesmoke;
 }
 
 #backend {
@@ -57,10 +62,14 @@
   margin-left: 40px;
   width: 25%;
   height: 20%;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   /* border: 1px solid green; */
+}
+
+#backend span {
+  color: rgb(14, 147, 146);
 }
 
 #end-head {
@@ -76,7 +85,7 @@
 #end-head span {
   font-size: 20px;
   font-weight: 500;
-  text-decoration: wavy;
+  /* text-decoration: wavy; */
 }
 
 #skill-content li {

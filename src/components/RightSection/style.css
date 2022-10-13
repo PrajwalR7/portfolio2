@@ -78,7 +78,6 @@ button {
   border-start-start-radius: 25%;
   border-end-end-radius: 15%;
   border-bottom-left-radius: 45%;
-  border: 10px solid rgba(0, 0, 0, 0.1);
   animation: border-change 4s infinite alternate ease-in-out;
 }
 
@@ -88,21 +87,21 @@ button {
     border-start-start-radius: 25%;
     border-end-end-radius: 15%;
     border-bottom-left-radius: 45%;
-    border: 10px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
   }
   50% {
     border-top-right-radius: 20%;
     border-start-start-radius: 60%;
     border-end-end-radius: 50%;
     border-bottom-left-radius: 20%;
-    border: 10px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.3);
   }
   100% {
     border-top-right-radius: 50%;
     border-start-start-radius: 25%;
     border-end-end-radius: 15%;
     border-bottom-left-radius: 45%;
-    border: 10px solid rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
   }
 }
 
