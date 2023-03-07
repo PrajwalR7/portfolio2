@@ -1,18 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import './style.css';
 import 'boxicons';
-import Scroll, { Link } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export default function NavBar() {
-  const [menuDown, setMenuDown] = useState(false);
-
-  // const handleClick = (e) => {
-  //   console.log('Hello');
-  //   e.preventDefault();
-  //   console.log(e.target);
-  //   e.target.style.color = 'black';
-  // };
+  const [menuDown, setMenuDown] = useState<boolean>(false);
 
   const menuHandler = () => {
     setMenuDown(!menuDown);

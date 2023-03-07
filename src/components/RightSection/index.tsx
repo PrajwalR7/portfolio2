@@ -1,4 +1,3 @@
-import React from 'react';
 import './style.css';
 import profile from '../../resources/profile1.jpg';
 // import 'boxicons';

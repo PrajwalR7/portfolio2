@@ -1,18 +1,20 @@
-import React from 'react';
 import './style.css';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import 'boxicons';
 import emailjs from '@emailjs/browser';
 import { Element } from 'react-scroll';
-export default function Contact() {
+import type { FormEvent, ReactElement } from 'react';
+
+export default function Contact(): ReactElement {
+
   let bigScreen = useMediaQuery('(min-width:1000px)');
-  const formSubmit = (e) => {
+  const formSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     emailjs
       .sendForm(
         'service_h8c2m5f',
         'template_sopo4rp',
-        e.target,
+        e.target as HTMLFormElement,
         'a85of-xuKT1aqBECt'
       )
       .then((res) => {
@@ -21,9 +23,7 @@ export default function Contact() {
       .catch((err) => {
         console.error(err);
       })
-      .finally(() => {
-        e.target = null;
-      });
+      .finally(() => {});
   };
 
   return (
@@ -37,12 +37,13 @@ export default function Contact() {
           {!bigScreen ? (
             <div id='links-contact'>
               <li id='github'>
-                <a href='https://github.com/PrajwalR7' target='_blank'>
+                <a href='https://github.com/PrajwalR7' target='_blank' rel="noreferrer">
                   <box-icon type='logo' name='github' size='md'></box-icon>
                 </a>
               </li>
               <li id='linkedin'>
                 <a
+                  rel="noreferrer"
                   href='https://www.linkedin.com/in/prajwal-ramesh-918a84187/'
                   target='_blank'>
                   <box-icon
@@ -54,6 +55,7 @@ export default function Contact() {
               </li>
               <li id='stack'>
                 <a
+                  rel="noreferrer"
                   href='https://stackoverflow.com/users/16412216/prajwal-ramesh'
                   target='_blank'>
                   <box-icon

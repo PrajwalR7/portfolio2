@@ -1,12 +1,11 @@
-import React from 'react';
 import './style.css';
 import NavBar from '../components/NavBar';
-import Rest from '../components/Rest';
+import Rest from '../components/Rest/';
 
 export default function App() {
   const nav = document.getElementsByTagName('nav');
 
-  window.addEventListener('scroll', (e) => {
+  window.addEventListener('scroll', (_e) => {
     if (window.pageYOffset > 0) {
       nav[0].classList.add('add-shadow');
     } else {
