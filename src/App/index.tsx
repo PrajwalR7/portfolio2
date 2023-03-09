@@ -5,7 +5,7 @@ import Rest from '../components/Rest/';
 export default function App() {
   const nav = document.getElementsByTagName('nav');
 
-  window.addEventListener('scroll', (_e) => {
+  window.addEventListener('scroll', () => {
     if (window.pageYOffset > 0) {
       nav[0].classList.add('add-shadow');
     } else {
