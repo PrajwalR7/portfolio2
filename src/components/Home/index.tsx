@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
+import React, { Ref, useRef } from 'react';
 import RightSection from '../RightSection';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import SideBar from '../SideBar';
 import { Element } from 'react-scroll';
 import './style.css';
-export let homeRef;
+export let homeRef: Ref<HTMLDivElement>;
 export default function Home() {
   homeRef = useRef(null);
 

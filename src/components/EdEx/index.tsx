@@ -1,13 +1,20 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './style.css';
 import { Element } from 'react-scroll';
+
+export interface EdContentType {
+  type: string,
+  name: string,
+  time: string
+}
+
 export default function EdEx() {
   const [contentType, setContentType] = useState('ed');
-  const timeLineHandler = (type, event) => {
+  const timeLineHandler = (type: string) => {
     setContentType(type);
   };
 
-  const edContent = [
+  const edContent: EdContentType[] = [
     {
       type: 'B.E',
       name: 'Atria Institute of Technology',
@@ -61,7 +68,7 @@ export default function EdEx() {
                   marginLeft: '0.5rem',
                   marginRight: '2rem',
                 }}
-                onClick={(e) => timeLineHandler('ed', e)}>
+                onClick={(e) => timeLineHandler('ed')}>
                 Education
               </span>
             </>
@@ -89,30 +96,27 @@ export default function EdEx() {
   );
 }
 
-export const TimeLine = (props) => {
-  console.log(props);
+export const TimeLine = ({data}: {data: EdContentType[]}) => {
   return (
     <div id='timeline-cont'>
-      {props.data.map((ele, idx) => {
-        return <TimeLineItem data={ele} />;
+      {data.map((ele: EdContentType, idx: number) => {
+        return <TimeLineItem key={idx} data={ele} />;
       })}
     </div>
   );
 };
 
-export const TimeLineItem = (props) => {
-  console.log('HHello');
-  console.log(props.data);
+export const TimeLineItem = ({data}: {data: EdContentType}) => {
   return (
     <div id='tl-item-cont'>
       <div id='tl-item-inner'>
-        <h3>{props.data.type}</h3>
+        <h3>{data.type}</h3>
         <p>
           <span style={{ color: '#0e9392', fontWeight: '400' }}>
-            {props.data.name}
+            {data.name}
           </span>
         </p>
-        <p>{props.data.time}</p>
+        <p>{data.time}</p>
         <span id='circle'></span>
         <span id='arrow'></span>
       </div>

@@ -1,12 +1,18 @@
-import React from 'react';
 import './style.css';
 import netflix from '../../resources/netflix.jpg';
 import chat from '../../resources/chat.jpg';
 import reddit from '../../resources/reddit.jpg';
 import att from '../../resources/a-t.png';
 import { Element } from 'react-scroll';
+
+export interface ProjectListType {
+  name: string,
+  img: string,
+  desc: string
+}
+
 export default function Project() {
-  const projectList = [
+  const projectList: ProjectListType[] = [
     {
       name: 'Netflix Clone',
       img: netflix,
@@ -37,8 +43,8 @@ export default function Project() {
           <p>My recent works</p>
         </div>
         <div id='project-content'>
-          {projectList.map((ele) => {
-            return <ProjectListItem data={ele} />;
+          {projectList.map((ele: ProjectListType, idx: number) => {
+            return <ProjectListItem key={idx} data={ele} />;
           })}
         </div>
       </div>
@@ -46,7 +52,7 @@ export default function Project() {
   );
 }
 
-export const ProjectListItem = ({ data }) => {
+export const ProjectListItem = ({ data }: { data: ProjectListType }) => {
   return (
     <div id='outer-proj-cont'>
       <div id='inner-project-container'>
