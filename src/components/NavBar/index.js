@@ -54,7 +54,7 @@ export default function NavBar() {
                 <span
                   onClick={menuHandler}
                   style={{ margin: 0, fontSize: '18px' }}>
-                  Ed&Ex
+                  Experience
                 </span>
               </Link>
             </li>
@@ -112,7 +112,7 @@ export default function NavBar() {
           </li>
           <li>
             <Link to='edex-link' spy={true} smooth={true} offset={-50}>
-              Ed&Ex
+              Experience
             </Link>
           </li>
           <li>

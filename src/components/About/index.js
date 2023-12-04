@@ -6,8 +6,8 @@ import FileSaver from 'file-saver';
 export default function About() {
   const download = () => {
     FileSaver.saveAs(
-      process.env.PUBLIC_URL + '/assets/Prajwal R - Resume.pdf',
-      'Resume.pdf'
+      process.env.PUBLIC_URL + '/assets/Resume.docx',
+      'Prajwal-Ramesh-Resume.docx'
     );
   };
 
@@ -24,15 +24,10 @@ export default function About() {
           </div>
           <div id='about-right-content'>
             <p>
-              I'm a Full-Stack Developer located in India (Bangalore,
-              Karnataka). I have a serious passion for UI effects, animations
-              and creating intuitive, dynamic user experiences. I'm currently
-              purusing my Bachelor's Degree in Computer Science at Visvesvaraya
-              Technological University (4th year) Well-organised person, problem
-              solver, independent employee with high attention to detail. Fan of
-              F1, MMA, outdoor activities, movies. Interested in the entire
-              webDev spectrum and working on ambitious projects with positive
-              people.
+            Passionate software engineer with 1 year of experience in creating innovative and scalable web applications that solve complex business problems and enhance user experience.<br/>
+
+Having strong background in <span style={{fontWeight: '500', color:'black', fontSize:'20px'}}>React, Node, Typescript, GoLang, database management across SQL, NoSQL and vector databases, cloud technologies and react-redux</span>. Worked on various projects both frontend and backend with a team of talented engineers to build and maintain scalable, secure, and user-friendly web applications.<br />
+I contribute to the full software development lifecycle, from ideation and design to deployment and testing, ensuring high-quality code and performance.
             </p>
             <button onClick={download}>Download CV</button>
           </div>

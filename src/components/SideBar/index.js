@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import 'boxicons';
+import { FaMedium } from "react-icons/fa6";
 
 export default function SideBar() {
   return (
@@ -35,6 +36,13 @@ export default function SideBar() {
               name='stack-overflow'
               type='logo'
               size='md'></box-icon>
+          </a>
+        </li>
+        <li id='stack'>
+          <a
+            href='https://medium.com/@rameshprajwal21'
+            target='_blank'>
+            <FaMedium style={{width:'24px', height:'24px', color:'#393939'}}/>
           </a>
         </li>
       </ul>

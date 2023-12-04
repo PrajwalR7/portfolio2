@@ -2,38 +2,28 @@ import React, { useState } from 'react';
 import './style.css';
 import { Element } from 'react-scroll';
 export default function EdEx() {
-  const [contentType, setContentType] = useState('ed');
+  const [contentType, setContentType] = useState('ex');
   const timeLineHandler = (type, event) => {
     setContentType(type);
   };
 
-  const edContent = [
-    {
-      type: 'B.E',
-      name: 'Atria Institute of Technology',
-      time: '2019 - 2023',
-    },
-    {
-      type: '12th',
-      name: 'Vidya Mandir Ind. PU College',
-      time: '2017-2019',
-    },
-    {
-      type: '10th',
-      name: 'TNCES',
-      time: '2016-2017',
-    },
-  ];
-
   const exContent = [
     {
-      type: 'SDE Intern',
-      name: 'Ezyfi Pvt. Ltd.',
-      time: 'Nov 2021 - Jan 2022',
+      role: 'Software Development Engineer',
+      company: 'Oslash',
+      type: 'Full Time',
+      time: 'June 2023 - Nov 2023'
     },
     {
-      type: 'Backend Engineer Intern',
-      name: 'Technoboot',
+      role: 'Product Engineer',
+      company: 'Oslash',
+      type: 'Internship',
+      time: 'Nov 2022 - Jun 2023'
+    },
+    {
+      role: 'SDE',
+      company: 'Ezyfi Pvt. Ltd.',
+      type: 'Internship',
       time: 'Nov 2021 - Jan 2022',
     },
   ];
@@ -42,7 +32,7 @@ export default function EdEx() {
     <Element id='edex-link' name='edex-link'>
       <div id='edex-container'>
         <div id='edex-header'>
-          <h2>Ed & Ex</h2>
+          <h2>Experience</h2>
           <p>My journey</p>
         </div>
         <div id='edex-content'>
@@ -52,19 +42,6 @@ export default function EdEx() {
               justifyContent: 'center',
               alignItems: 'center',
             }}>
-            <>
-              <box-icon type='solid' name='school' size='md'></box-icon>
-              <span
-                id='head-span'
-                style={{
-                  fontSize: '1.2rem',
-                  marginLeft: '0.5rem',
-                  marginRight: '2rem',
-                }}
-                onClick={(e) => timeLineHandler('ed', e)}>
-                Education
-              </span>
-            </>
             <>
               <box-icon
                 type='solid'
@@ -78,11 +55,7 @@ export default function EdEx() {
               </span>
             </>
           </div>
-          {contentType === 'ed' ? (
-            <TimeLine data={edContent} />
-          ) : (
             <TimeLine data={exContent} />
-          )}
         </div>
       </div>
     </Element>
@@ -93,7 +66,7 @@ export const TimeLine = (props) => {
   console.log(props);
   return (
     <div id='timeline-cont'>
-      {props.data.map((ele, idx) => {
+      {props.data.map((ele) => {
         return <TimeLineItem data={ele} />;
       })}
     </div>
@@ -101,15 +74,13 @@ export const TimeLine = (props) => {
 };
 
 export const TimeLineItem = (props) => {
-  console.log('HHello');
-  console.log(props.data);
   return (
     <div id='tl-item-cont'>
       <div id='tl-item-inner'>
-        <h3>{props.data.type}</h3>
+        <h3>{props.data.role}</h3>
         <p>
           <span style={{ color: '#0e9392', fontWeight: '400' }}>
-            {props.data.name}
+            {props.data.company} • {props.data.type}
           </span>
         </p>
         <p>{props.data.time}</p>

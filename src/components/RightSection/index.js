@@ -10,10 +10,9 @@ export default function RightSection() {
         <h1>
           <span style={{ color: '#0e9392' }}>Prajwal</span> Ramesh
         </h1>
-        <h3>UI developer</h3>
+        <h3>Software Engineer</h3>
         <p>
-          Im a creative designer based in India and im very passionate and
-          dedicated to my work
+          Building Scalable, Secure, and User-Friendly Applications
         </p>
         <Link to='contact-link' spy={true} smooth={true} offset={-80}>
           <button id='say-hello'>Say Hello</button>

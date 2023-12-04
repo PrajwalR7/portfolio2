@@ -33,7 +33,7 @@
   flex-wrap: nowrap;
 }
 
-#frontend {
+#frontend, .other {
   display: flex;
   justify-content: center;
   align-items: center;

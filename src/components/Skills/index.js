@@ -16,27 +16,35 @@ export default function Skills() {
             </div>
             {/* <div id='front-content'> */}
             <li>
-              <h6>JavaScript</h6>
+              <h6>React.js</h6>
               {/* <p style={{ color: 'red', fontWeight: 500 }}>Advanced</p> */}
             </li>
             <li>
-              <h6>Reactjs</h6>
+              <h6>Redux</h6>
               {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
             </li>
             <li>
-              <h6>HTML</h6>
+              <h6>Tailwind CSS</h6>
               {/* <p style={{ color: 'orangered', fontWeight: 400 }}>
                 Intermediate
               </p> */}
             </li>
             <li>
-              <h6>CSS</h6>
+              <h6>GraphQL</h6>
+              {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
+            </li>
+            <li>
+              <h6>Progressive Web Apps</h6>
+              {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
+            </li>
+            <li>
+              <h6>Next.js</h6>
               {/* <p style={{ color: 'orangered', fontWeight: 400 }}>
                 Intermediate
               </p> */}
             </li>
             <li>
-              <h6>React-Native</h6>
+              <h6>Astro</h6>
               {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
             </li>
             {/* </div> */}
@@ -46,11 +54,19 @@ export default function Skills() {
               <span>Backend</span>
             </div>
             <li>
-              <h6>JavaScript</h6>
+              <h6>Node.js</h6>
               {/* <p style={{ color: 'red', fontWeight: 500 }}>Advanced</p> */}
             </li>
             <li>
-              <h6>Nodejs</h6>
+              <h6>MongoDB</h6>
+              {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
+            </li>
+            <li>
+              <h6>Cloudflare</h6>
+              {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
+            </li>
+            <li>
+              <h6>AWS</h6>
               {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
             </li>
             <li>
@@ -58,11 +74,15 @@ export default function Skills() {
               {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
             </li>
             <li>
-              <h6>MongoDB</h6>
+              <h6>Typescript</h6>
               {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
             </li>
             <li>
               <h6>Firebase</h6>
+              {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
+            </li>
+            <li>
+              <h6>CI/CD</h6>
               {/* <p style={{ color: 'orange', fontWeight: 200 }}>Beginner</p> */}
             </li>
           </div>
