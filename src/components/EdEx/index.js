@@ -9,7 +9,7 @@ export default function EdEx() {
 
   const exContent = [
     {
-      role: 'Software Development Engineer',
+      role: 'SDE I',
       company: 'Oslash',
       type: 'Full Time',
       time: 'June 2023 - Nov 2023'
