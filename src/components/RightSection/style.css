@@ -74,11 +74,12 @@ button {
 #right-right-sec img {
   width: 320px;
   height: 320px;
+  background-color: rgba(14, 147, 146, 0.4);
   border-top-right-radius: 50%;
-  border-start-start-radius: 25%;
-  border-end-end-radius: 15%;
-  border-bottom-left-radius: 45%;
-  animation: border-change 4s infinite alternate ease-in-out;
+  border-start-start-radius: 50%;
+  border-end-end-radius: 50%;
+  border-bottom-left-radius: 50%;
+  /* animation: border-change 4s infinite alternate ease-in-out; */
 }
 
 @keyframes border-change {

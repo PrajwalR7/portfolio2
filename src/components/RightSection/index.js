@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import profile from '../../resources/profile1.jpg';
+import profile from '../../resources/profile1 1.png';
 // import 'boxicons';
 import { Link } from 'react-scroll';
 export default function RightSection() {
