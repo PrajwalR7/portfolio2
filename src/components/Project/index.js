@@ -19,7 +19,7 @@ export default function Project() {
       url: 'https://github.com/PrajwalR7/note-app',
       name: 'Note App',
       img: note,
-      desc: 'User-friendly note-taking platform for seamless creation, storage, and management of text snippets.',
+      desc: 'User-friendly note-taking platform for seamless creation, storage, and management of text snippets with JWT Authentication',
     },
     {
       url: 'https://github.com/PrajwalR7/url-shortner',
