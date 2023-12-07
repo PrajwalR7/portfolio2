@@ -11,6 +11,7 @@ import token from '../../resources/token.svg'
 import hpm from '../../resources/hospital.svg'
 import note from '../../resources/note.svg'
 import oslash from '../../resources/oslash.svg'
+import url from '../../resources/url.svg'
 import { Element } from 'react-scroll';
 export default function Project() {
   const projectList = [
@@ -21,10 +22,16 @@ export default function Project() {
       desc: 'User-friendly note-taking platform for seamless creation, storage, and management of text snippets.',
     },
     {
-      url: 'https://github.com/PrajwalR7/social_network',
+      url: 'https://github.com/PrajwalR7/url-shortner',
       name: 'Social Network',
       img: social_network,
       desc: 'Minimalistic social network backend simulating core functionalities.',
+    },
+    {
+      url: 'https://github.com/PrajwalR7/url-shortner',
+      name: 'URL Shortner',
+      img: url,
+      desc: 'URL shortner similar to bit.ly, tinyurl etc, developed using Node.js, MongoDB, React.js',
     },
     {
       url: 'https://github.com/PrajwalR7/zip-code-info-app',
@@ -104,7 +111,7 @@ export const ProjectListItem = ({ data }) => {
     e.preventDefault()
     e.stopPropagation()
 
-    window.location.href = url
+    window.open(url, '_blank')
   }
   return (
     <div onClick={(e) => clickHandler(e, data.url)} id='outer-proj-cont'>
